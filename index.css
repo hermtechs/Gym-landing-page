@@ -271,8 +271,8 @@ a h4{
 .side-txt{
     max-width: 30em;
     text-align: center;
-   justify-content: center;
-   margin: auto;
+    justify-content: center;
+    margin: auto;
 }
 .side-txt p{
     margin-top: 1rem;
@@ -367,19 +367,17 @@ text-align: start;
 
 /* CONTACT US SECTION */
 .contact-us{
-    background: var(--clr-main);
-    /* background-size: cover;
+    background: url(./images/contact-us-bg.jpg) no-repeat,
+                           radial-gradient( rgb(181, 226, 224), blue) ;
+    background-attachment: fixed; 
+    background-blend-mode: multiply;  
+    background-size:cover;
     width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    color: var(--clr-dark,#111); */
+    height: 100%;  
 }
 
 .contact-us form{
-    background: url(./images/847.jpg) center center cover,
-                     radial-gradient(rgb(98, 81, 129),#111) ;
-                     
+            
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -388,7 +386,6 @@ text-align: start;
    /* max-width: 100%; */
    margin: 0 auto;
    font-weight: bolder;
-
 }
 .contact-us form input[placeholder]{
     color:#fff;
@@ -419,18 +416,22 @@ form textarea, input{
 
 /* VISIT US SECTION */
 .visit-us-section{
+    /* margin: 4rem; */
     height: 100%;
-    max-width: 100%;
-    /* background: #150d61; */
-    margin-top: -1em;
-    padding: 0;
+    padding: 1rem;
     text-align: center;
+    width: 100%;
+    background: #000000;
 }
 /* Set the size of the div element that contains the map */
 #map {
-    height: 450px;
+
+    border-radius: 5px;
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
     /* The height is 400 pixels */
-    width: 100%;
+    /* width: 100%; */
     /* The width is the width of the web page */
   }
 
