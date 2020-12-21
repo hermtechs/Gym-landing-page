@@ -428,8 +428,8 @@ form textarea, input{
 
     border-radius: 5px;
     height: 250px;
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%; */
+    text-align: center;
     /* The height is 400 pixels */
     /* width: 100%; */
     /* The width is the width of the web page */
