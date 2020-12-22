@@ -7,6 +7,7 @@
     --clr-btns:#0C43F0;
     --clr-main: #0007B3;
     --clr-dark:#000;
+    --clr-light:#fff;
     --clr-primary:#B39115;
     --clr-title:#0007B3;
 }
@@ -335,7 +336,7 @@ text-align: start;
 .footer-container{
     display: grid;
     /* background-color: var(-clr-primary,#000); */
-    background-color: #0a0d4d;
+    background-color: #060c75;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-content: center;
@@ -374,10 +375,10 @@ text-align: start;
     background-size:cover;
     width: 100%;
     height: 100%;  
+    font-family: 'Vollkorn', serif;
 }
 
 .contact-us form{
-            
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -387,24 +388,52 @@ text-align: start;
    margin: 0 auto;
    font-weight: bolder;
 }
-.contact-us form input[placeholder]{
-    color:#fff;
+
+.contact-us form input, textarea{
+    display:inline-block;
+    transition: 100ms ease-in-out;
+    border-radius: 4px;
+    background-color: rgb(46, 58, 216);
+    padding: .5em;
+    font-family: 'Vollkorn', serif;
 }
-form input, form textarea{
-    background-color: transparent;
-    color: #111;
+.contact-us ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+  }
+  .contact-us ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+  .contact-us :-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+  }
+  .contact-us :-moz-placeholder { /* Firefox 18- */
+    color: pink;
+  }
+.contact-us .submit-btn{
+    display: inline-block;
+    color:pink;
+    transition: 250ms ease-in-out;
+    /* transform: scale(1); */
+    font-weight: bold;
+    padding: .3em;
 }
+.contact-us .submit-btn:hover, :focus{
+    transform: scale(1.1);
+}
+.contact-us input[type=text]{
+    color: #fff;
+}
+.contact-us textarea{
+    color: #fff;
+}
+
+
 .contact-title{
-    color: var(--clr-dark,#111);
+    color: var(--clr-light);
 }
-/* .content{
-    position: relative;       
-    top: 30%;
-    text-align: left;
-    max-width: 30em;
-} */
+
 form>*+*{
-    margin: 1rem;
+    margin: .4rem;
 }
 form textarea, input{
     border:0;
