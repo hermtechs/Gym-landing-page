@@ -1,10 +1,10 @@
-'use strict'
-var verticalNav = document.querySelector('.nav-menu-vertical');
-var hamburger = document.querySelector('.hamburger');
-var overlay = document.querySelector('.overlay');
-var navLink = document.querySelectorAll('.nav-link');
+// 'use strict'
+const verticalNav = document.querySelector('.nav-menu-vertical');
+const hamburger = document.querySelector('.hamburger');
+const overlay = document.querySelector('.overlay');
+const navLink = document.querySelectorAll('.nav-link');
 
-verticalNav.style.transform = 'translateX(-100%)'; /*avoids having to double click  
+verticalNav.style.transform = 'translateX(-100%)'; /*avoids having to click twice 
                                                      for the nav btn to work*/
 
 
