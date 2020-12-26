@@ -25,6 +25,7 @@ body{
     font-family: sans-serif;
     color: #fff;
     font-size: 1.1rem;
+    overflow-x: hidden;
 }
 
 img{
@@ -294,7 +295,7 @@ a h4{
 padding: .1em;
 }
 .contents img{
-    border-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
 }
 .social-media >*{
 /* padding: .4rem; */
@@ -304,9 +305,16 @@ color: #fff;
 font-size: 1.1rem;
 }
 .social-media i{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-right: .3rem;
     color: rgb(129, 122, 122);
+    font-weight: bolder;
+}
+.about-trainer{
+    background-color: #060c75;
+    margin-top: -.29rem;
+    color: #fff;
+    padding: .2em;
 }
 /* .section3:before{
     content: "";
@@ -352,13 +360,18 @@ text-align: start;
 .quick-links>*+*{
     margin-bottom: 2rem;
 }
+footer .social-media i{
+    font-size: 1.5rem;
+    padding-right: .3rem;
+    color: rgb(129, 122, 122);
+}
 
 .copyright{
     background-color: var(--clr-main,#1192c9);;
     width: 100%;
     padding: .4rem;
 }
-.copyright h3{
+.copyright h5{
     text-align: center;
     position: relative;
     top: 20%;
@@ -425,6 +438,8 @@ text-align: start;
 }
 .contact-us textarea{
     color: #fff;
+    display: inline-block;
+    max-width: 100%;
 }
 
 
